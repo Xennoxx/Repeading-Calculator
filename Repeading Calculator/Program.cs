@@ -1,45 +1,52 @@
-﻿class Program
+﻿using System.Diagnostics;
+
+class Program
 {
     static void Main(string[] args)
     {
+        {
+            static void Calculator1()
+            {
+                //CALCULATOR
+                //[A1] Objekt Aufgabe erstellt
+                wert Aufgabe1 = new wert();
 
-        //CALCULATOR
-        //[A1] Objekt Aufgabe erstellt
-        wert Aufgabe1 = new wert();
+                //[A1] Eingabe von Wert1
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("_________");
+                Console.Write("Wert1: ");
+                Aufgabe1.wert1 = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
 
-        //[A1] Eingabe von Wert1
-        Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("_________");
-        Console.Write("Wert1: ");
-        Aufgabe1.wert1 = Convert.ToInt32(Console.ReadLine());
-        Console.Clear();
+                //[A1] Eingabe von Wert2
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("_________");
+                Console.Write("Wert2: ");
+                Aufgabe1.wert2 = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
 
-        //[A1] Eingabe von Wert2
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("_________");
-        Console.Write("Wert2: ");
-        Aufgabe1.wert2 = Convert.ToInt32(Console.ReadLine());
-        Console.Clear();
+                //[A1] Eingabe von "Zeicheneingabe"
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("__________________");
+                Console.WriteLine("Zeicheneingabe: ");
+                Aufgabe1.zeicheneingabe = Convert.ToChar(Console.ReadLine());
+                Console.Clear();
 
-        //[A1] Eingabe von "Zeicheneingabe"
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("__________________");
-        Console.WriteLine("Zeicheneingabe: ");
-        Aufgabe1.zeicheneingabe = Convert.ToChar(Console.ReadLine());
-        Console.Clear();
+                //[A1] Berechnung
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("____________");
+                Console.WriteLine("Berechnet...");
+                Aufgabe1.berechnung();
+                Console.Clear();
 
-        //[A1] Berechnung
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("____________");
-        Console.WriteLine("Berechnet...");
-        Aufgabe1.berechnung();
-        Console.Clear();
-
-        //[A1] Ergebnis
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine("_______________");
-        Console.WriteLine("Ergebnis = " + Aufgabe1.ergebnis);
-        Console.ReadKey();
+                //[A1] Ergebnis
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("_______________");
+                Console.WriteLine("Ergebnis = " + Aufgabe1.ergebnis);
+                Console.ReadKey();
+                Console.Clear();                
+            }
+        }
     }
 }
 
